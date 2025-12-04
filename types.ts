@@ -7,4 +7,5 @@ export interface Website {
   thumbnailUrl: string;
   createdAt: Date;
   category: WebsiteCategory;
+  path : string;
 }

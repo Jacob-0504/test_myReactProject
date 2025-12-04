@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Jacob-0504.github.io/test_myReactProject",
   "name": "my-website-builder",
   "private": true,
   "version": "0.0.0",
@@ -6,11 +7,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react": "^19.2.0"
+    "react-router-dom": "^7.10.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
